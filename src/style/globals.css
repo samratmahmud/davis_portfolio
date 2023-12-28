@@ -14,9 +14,9 @@
 body {
   @apply font-inter;
   font-size: 14px;
-  line-height: "1.6em";
+  line-height: 1.6em;
   font-weight: 400;
-  font: "#a9adb8";
+  color: #a9adb8;
 }
 
 @media screen and (min-width: 992px) {
@@ -27,4 +27,8 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }

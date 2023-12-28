@@ -30,9 +30,9 @@ const navItems = [
 
 function Navbar() {
   return (
-    <nav>
-      <div className="container py-5">
-        <div className="flex gap-3 items-cente justify-between">
+    <nav className="bg-gray-900 opacity-90 py-3.5 fixed left-0 right-0 z-[1020]">
+      <div className="container">
+        <div className="flex gap-3 items-center justify-between">
           <Link href="/">
             <img src="/images/logo.png" alt="" />
           </Link>
