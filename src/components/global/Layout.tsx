@@ -8,7 +8,7 @@ interface layoutProps {
 function Layout(props: layoutProps) {
   const {children} = props;
   return (
-    <main>
+    <main className="bg-gray-900">
       <Navbar /> {children}
     </main>
   );

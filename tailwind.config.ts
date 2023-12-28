@@ -1,4 +1,5 @@
 import type {Config} from "tailwindcss";
+import {fontFamily} from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -16,13 +17,44 @@ const config: Config = {
           "700": "#a9adb8",
           "900": "#0a101e",
         },
-        slate: {"400": "#a9adb8", "500": "#101624", "900": "#151b2980"},
+        slate: {"400": "#a9adb8", "500": "#101624", "800": "#151b2980"},
       },
+    },
+    fontSize: {
+      xs: ["15px", {lineHeight: "1.6em"}],
+      sm: ["18px", {lineHeight: "1.6em"}],
+      md: ["20px", {lineHeight: "1.2em"}],
+      base: ["22px", {lineHeight: "1.2em", letterSpacing: "1px"}],
+      lg: ["24px", {lineHeight: "1.2em", letterSpacing: "1px"}],
+      xl: ["26px", {lineHeight: "1.2em"}],
+      "2xl": ["30px", {lineHeight: "1.2em"}],
+      "3xl": ["32px", {lineHeight: "1.2em"}],
+      "4xl": ["34px", {lineHeight: "1.2em"}],
+      "5xl": ["36px", {lineHeight: "1.2em"}],
+      "6xl": ["40px", {lineHeight: "1.2em"}],
+      "7xl": ["60px", {lineHeight: "1.2em"}],
+      "8xl": ["90px", {lineHeight: ""}],
+    },
+    fontFamily: {
+      inter: ["Inter", ...fontFamily.sans],
+      roboto: ["Roboto", ...fontFamily.sans],
     },
     boxShadow: {
       sm: "0 5px 10px #fec64450",
     },
     backgroundImage: {},
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "0.750rem",
+      },
+    },
+    screens: {
+      sm: "600px",
+      md: "768px",
+      lg: "992px",
+      xl: "1140px",
+    },
   },
   plugins: [],
 };
