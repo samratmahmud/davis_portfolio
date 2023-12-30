@@ -1,14 +1,16 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
+import NavItem from "./NavItem";
 
 const navItems = [
   {
     title: "HOME",
-    link: "#",
+    link: "#header",
   },
   {
     title: "ABOUT",
-    link: "#",
+    link: "#about",
   },
   {
     title: "RESUME",
@@ -29,6 +31,8 @@ const navItems = [
 ];
 
 function Navbar() {
+  const [tab, setTab] = useState(-1);
+
   return (
     <nav className="bg-gray-900 opacity-90 py-3.5 fixed left-0 right-0 z-[1020]">
       <div className="container">
@@ -39,13 +43,13 @@ function Navbar() {
           <div className="flex items-center gap-11">
             <div className="flex gap-10">
               {navItems.map(({title, link}, index) => (
-                <Link
-                  href={link}
+                <NavItem
                   key={index}
-                  className="text-gray-100 hover:text-gray-700 duration-300 py-3.5 font-roboto uppercase"
-                >
-                  {title}
-                </Link>
+                  title={title}
+                  link={link}
+                  isActive={index === tab}
+                  handelClick={() => setTab(index)}
+                />
               ))}
             </div>
             <div className="border border-gray-100 h-5" />

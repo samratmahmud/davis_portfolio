@@ -18,7 +18,10 @@ const socialItems = [
 
 function Header() {
   return (
-    <section className="py-28 grid place-content-center h-screen bg-slate-800">
+    <section
+      id="header"
+      className="py-28 grid place-content-center h-screen bg-slate-800"
+    >
       <div className="container">
         <div className="mb-5">
           <img
