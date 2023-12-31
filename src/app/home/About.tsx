@@ -38,7 +38,7 @@ function About() {
   return (
     <section id="about">
       <div className="container my-100">
-        <div className="mb-10">
+        <div>
           <Tittle title="ABOUT ME" section="ABOUT ME" />
         </div>
         <div className="grid grid-cols-2 gap-10">

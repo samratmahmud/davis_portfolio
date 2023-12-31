@@ -44,14 +44,14 @@ function Service() {
   return (
     <section>
       <div className="container my-100">
-        <div className="mb-10">
+        <div>
           <Title title="SERVICE" section="SERVICE" />
         </div>
         <div className="grid grid-cols-3 gap-6">
           {serviceCards.map(({title, icon, describtion}, index) => (
             <div
               key={index}
-              className="flex flex-col items-center border border-gray-400 rounded py-[50px] px-[30px] group"
+              className="flex flex-col items-center border border-gray-400 rounded py-[50px] px-[30px] group bg-slate-500"
             >
               <div className="w-[90px] aspect-square p-[18px] border border-gray-600 group-hover:border-primary duration-300 rounded-full mb-7">
                 <img
@@ -63,7 +63,7 @@ function Service() {
               <h2 className="text-md mb-4 group-hover:text-primary duration-300 text-gray-100">
                 {title}
               </h2>
-              <p className="">{describtion}</p>
+              <p className="text-center">{describtion}</p>
             </div>
           ))}
         </div>

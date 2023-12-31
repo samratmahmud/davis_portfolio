@@ -8,7 +8,7 @@ interface titleProps {
 function Title(props: titleProps) {
   const {title, section} = props;
   return (
-    <div>
+    <div className="mb-10">
       <h2 className="text-lg font-medium text-primary text-center relative z-10 mb-2.5">
         {title}
       </h2>

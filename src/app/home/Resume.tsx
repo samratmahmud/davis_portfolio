@@ -62,7 +62,7 @@ function Resume() {
   return (
     <section className="bg-gray-950 pb-[100px]">
       <div className="container">
-        <div className="mb-10">
+        <div>
           <Title title="RESUME" section="RESUME" />
         </div>
         <div className="grid grid-cols-2 gap-6">

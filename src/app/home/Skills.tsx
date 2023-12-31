@@ -32,7 +32,7 @@ function Skills() {
   return (
     <section className="bg-gray-950 py-[100px]">
       <div className="container mb-6">
-        <div className="mb-10">
+        <div>
           <Title title="SKILLS" section="SKILLS" />
         </div>
         <div className="grid grid-cols-2">
