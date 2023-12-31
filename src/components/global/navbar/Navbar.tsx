@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, {useState} from "react";
 import NavItem from "./NavItem";
+import {usePathname} from "next/navigation";
 
 const navItems = [
   {
@@ -31,8 +32,6 @@ const navItems = [
 ];
 
 function Navbar() {
-  const [tab, setTab] = useState(-1);
-
   return (
     <nav className="bg-gray-900 opacity-90 py-3.5 fixed left-0 right-0 z-[1020]">
       <div className="container">
@@ -43,13 +42,7 @@ function Navbar() {
           <div className="flex items-center gap-11">
             <div className="flex gap-10">
               {navItems.map(({title, link}, index) => (
-                <NavItem
-                  key={index}
-                  title={title}
-                  link={link}
-                  isActive={index === tab}
-                  handelClick={() => setTab(index)}
-                />
+                <NavItem key={index} title={title} link={link} />
               ))}
             </div>
             <div className="border border-gray-100 h-5" />
