@@ -60,11 +60,9 @@ const resumeItems = [
 
 function Resume() {
   return (
-    <section className="bg-gray-950 pb-[100px]">
+    <section id="resume" className="bg-gray-950 pb-[100px]">
       <div className="container">
-        <div>
-          <Title title="RESUME" section="RESUME" />
-        </div>
+        <Title title="RESUME" section="RESUME" />
         <div className="grid grid-cols-2 gap-6">
           {resumeItems.map(({icon, details, headline}, index) => (
             <div key={index} className="">

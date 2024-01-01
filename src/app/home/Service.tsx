@@ -44,9 +44,7 @@ function Service() {
   return (
     <section>
       <div className="container my-100">
-        <div>
-          <Title title="SERVICE" section="SERVICE" />
-        </div>
+        <Title title="SERVICE" section="SERVICE" />
         <div className="grid grid-cols-3 gap-6">
           {serviceCards.map(({title, icon, describtion}, index) => (
             <div

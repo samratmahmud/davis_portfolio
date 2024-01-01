@@ -12,13 +12,7 @@
 }
 
 body {
-  @apply font-inter text-9xl font-normal text-gray-700;
-}
-
-@media screen and (min-width: 992px) {
-  body {
-    @apply text-[16px] leading-[1.6em];
-  }
+  @apply font-inter text-9xl lg:text-[16px] leading-[1.6em] font-normal text-gray-700;
 }
 
 html {

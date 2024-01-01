@@ -38,9 +38,7 @@ function About() {
   return (
     <section id="about">
       <div className="container my-100">
-        <div>
-          <Tittle title="ABOUT ME" section="ABOUT ME" />
-        </div>
+        <Tittle title="ABOUT ME" section="ABOUT ME" />
         <div className="grid grid-cols-2 gap-10">
           <img className="w-full h-full pr-4" src="/images/about.jpg" alt="" />
           <div>

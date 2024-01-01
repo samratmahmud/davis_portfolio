@@ -72,11 +72,9 @@ function Blogs() {
   };
 
   return (
-    <section>
+    <section id="blog">
       <div className="container my-100">
-        <div>
-          <Title title="BLOGS" section="BLOGS" />
-        </div>
+        <Title title="BLOGS" section="BLOGS" />
         <Slider {...settings}>
           {blogsCards.map(({thumbnail, title, admin, date}, index) => (
             <div key={index} className="px-3">

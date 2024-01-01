@@ -15,19 +15,19 @@ const navItems = [
   },
   {
     title: "RESUME",
-    link: "#",
+    link: "#resume",
   },
   {
     title: "PORTFOLIO",
-    link: "#",
+    link: "#portfolio",
   },
   {
     title: "BLOG",
-    link: "#",
+    link: "#blog",
   },
   {
     title: "CONTACT",
-    link: "#",
+    link: "#contact",
   },
 ];
 

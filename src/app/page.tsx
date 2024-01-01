@@ -1,6 +1,7 @@
 import About from "./home/About";
 import Blogs from "./home/Blogs";
 import Contact from "./home/Contact";
+import Footer from "./home/Footer";
 import Header from "./home/Header";
 import Portfolio from "./home/Portfolio";
 import Resume from "./home/Resume";
@@ -20,6 +21,7 @@ export default function Home() {
       <Review />
       <Blogs />
       <Contact />
+      <Footer />
     </main>
   );
 }

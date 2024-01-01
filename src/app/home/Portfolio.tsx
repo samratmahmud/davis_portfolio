@@ -44,11 +44,9 @@ const portfolioCards = [
 
 function Portfolio() {
   return (
-    <section>
+    <section id="portfolio">
       <div className="container my-100">
-        <div>
-          <Title title="PORTFOLIO" section="PORTFOLIO" />
-        </div>
+        <Title title="PORTFOLIO" section="PORTFOLIO" />
         <div className="grid grid-cols-3 gap-6 mb-12">
           {portfolioCards.map(
             ({thumbnail, icon, title, describtion}, index) => (
