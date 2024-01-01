@@ -1,7 +1,9 @@
+"use client";
 import Buttons from "@/components/common/Buttons";
+import SocialPlatform from "@/components/common/SocialPlatform";
 import TextField from "@/components/common/TextField";
 import Title from "@/components/common/Title";
-import React from "react";
+import React, {useState} from "react";
 
 const contactInfo = [
   {
@@ -25,7 +27,32 @@ const contactInfo = [
   },
 ];
 
+const socialPlatform = [
+  {
+    icon: "/images/icons8-dribble-32.png",
+    name: "Dribbble",
+    link: "",
+  },
+  {
+    icon: "/images/icons8-behance-32.png",
+    name: "Behance",
+    link: "",
+  },
+  {
+    icon: "/images/icons8-twitter-30.png",
+    name: "Twitter",
+    link: "",
+  },
+  {
+    icon: "/images/icons8-linkedin-48.png",
+    name: "LinkedIn",
+    link: "",
+  },
+];
+
 function Contact() {
+  const [show, setShow] = useState(0);
+
   return (
     <section id="contact" className="bg-gray-950 py-[100px]">
       <div className="container">
@@ -75,7 +102,17 @@ function Contact() {
             <div className="text-md font-medium mb-6">
               Visite my social profile and get connected
             </div>
-            <div></div>
+            <div className="flex gap-5">
+              {socialPlatform.map(({icon, name, link}, index) => (
+                <SocialPlatform
+                  icon={icon}
+                  name={name}
+                  link={link}
+                  isActive={index === show}
+                  handelChange={() => setShow(index)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

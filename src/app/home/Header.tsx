@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, {useEffect} from "react";
+// import WaterWave from "react-water-wave";
 
 const socialItems = [
   {
@@ -20,8 +22,10 @@ function Header() {
   return (
     <section
       id="header"
-      className="py-28 grid place-content-center h-screen bg-slate-800"
+      className="py-28 grid place-content-center h-screen bg-slate-900"
     >
+      {/* <WaterWave imageUrl={""} perturbance={0.03}>
+        {() => ( */}
       <div className="container">
         <div className="mb-5">
           <img
@@ -50,6 +54,8 @@ function Header() {
           ))}
         </div>
       </div>
+      {/* )}
+      </WaterWave> */}
     </section>
   );
 }

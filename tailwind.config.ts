@@ -13,6 +13,7 @@ const config: Config = {
         primary: "#fec544",
         gray: {
           "100": "#fdfeff",
+          "300": "#dee2e6",
           "400": "#232935",
           "600": "#3f4551",
           "700": "#a9adb8",
