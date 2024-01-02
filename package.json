@@ -14,6 +14,7 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-modern-drawer": "^1.2.2",
     "react-ripples": "^2.2.1",
     "react-slick": "^0.29.0",
     "react-water-wave": "^2.0.1",
