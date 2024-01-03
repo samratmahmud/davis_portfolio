@@ -37,16 +37,18 @@ const profileDetails = [
 function About() {
   return (
     <section id="about">
-      <div className="container my-100">
+      <div className="container lg:my-[100px] my-20">
         <Tittle title="ABOUT ME" section="ABOUT ME" />
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 lg:gap-10 gap-7">
           <img
+            data-aos="fade-right"
+            data-aos-delay="200"
             className="w-full h-full lg:pr-4"
             src="/images/about.jpg"
             alt=""
           />
-          <div>
-            <h2 className="text-5xl mb-5 text-gray-100">
+          <div data-aos="zoom-in" data-aos-delay="300">
+            <h2 className="md:text-5xl text-4xl mb-5 text-gray-100">
               Hi There! I'm Edward Davis
             </h2>
             <h4 className="text-lg font-light text-primary mb-5">
@@ -61,7 +63,7 @@ function About() {
             <div className="flex flex-col gap-3.5 mb-11">
               {profileDetails.map(({question, answer}, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <span className="min-w-24">{question}</span>
+                  <span className="md:min-w-24 min-w-20">{question}</span>
                   <span>:</span>
                   <span>{answer}</span>
                 </div>

@@ -18,10 +18,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.my-100 {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 .filter-gray {
   filter: grayscale(1);
 }

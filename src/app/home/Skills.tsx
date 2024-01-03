@@ -30,7 +30,7 @@ const skillsPersent = [
 
 function Skills() {
   return (
-    <section className="bg-gray-950 py-[100px]">
+    <section className="bg-gray-950 lg:py-[100px] py-20">
       <div className="container mb-6">
         <Title title="SKILLS" section="SKILLS" />
         <div className="grid grid-cols-2">
