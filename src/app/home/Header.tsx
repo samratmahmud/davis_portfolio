@@ -29,20 +29,20 @@ function Header() {
         {() => (
           <div id="header" className="py-28 grid place-content-center h-screen">
             <div className="container">
-              <div className="mb-5">
+              <div className="mb-6">
                 <img
                   className="w-48 h-48 rounded-full border-[6px] border-slate-600/10 m-auto"
                   src="/images/hero-img.jpg"
                   alt=""
                 />
               </div>
-              <h1 className="text-7xl font-semibold text-gray-100 text-center mb-5">
+              <h1 className="md:text-7xl text-6xl font-semibold text-gray-100 text-center mb-5">
                 Hi, I am <span className="text-primary">Jhon Doe</span>
               </h1>
-              <p className="text-center text-sm mb-5">
+              <p className="text-center font-light md:text-sm text-10xl mb-5">
                 I am a frontend web developer. I can provide clean code and
-                pixel perfect design. <br /> I also make website more & more
-                interactive with web animations.
+                pixel perfect design. <br className="hidden md:block" /> I also
+                make website more & more interactive with web animations.
               </p>
               <div className="flex justify-center gap-5">
                 {socialItems.map(({icon, link}, index) => (

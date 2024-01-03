@@ -39,8 +39,12 @@ function About() {
     <section id="about">
       <div className="container my-100">
         <Tittle title="ABOUT ME" section="ABOUT ME" />
-        <div className="grid grid-cols-2 gap-10">
-          <img className="w-full h-full pr-4" src="/images/about.jpg" alt="" />
+        <div className="grid lg:grid-cols-2 gap-10">
+          <img
+            className="w-full h-full lg:pr-4"
+            src="/images/about.jpg"
+            alt=""
+          />
           <div>
             <h2 className="text-5xl mb-5 text-gray-100">
               Hi There! I'm Edward Davis

@@ -43,6 +43,7 @@ const config: Config = {
       "7xl": ["60px", {lineHeight: "1.2em"}],
       "8xl": ["90px", {lineHeight: ""}],
       "9xl": ["14px", {lineHeight: "1.6em"}],
+      "10xl": ["16px", {lineHeight: "1.6em"}],
     },
     fontFamily: {
       inter: ["Inter", ...fontFamily.sans],

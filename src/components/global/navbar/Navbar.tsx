@@ -60,9 +60,9 @@ function Navbar() {
         isVisible ? "bg-gray-900" : "bg-transparent"
       }`}
     >
-      <div className="container">
+      <div className="lg:container px-3 lg:px-0">
         <div className="flex gap-3 items-center justify-between">
-          <Link href="/">
+          <Link href="/" className="py-[7px]">
             <img src="/images/logo.png" alt="" />
           </Link>
           <div className="flex items-center gap-10">
@@ -101,7 +101,7 @@ function Navbar() {
         </div>
         <div>
           <Drawer onClose={toggle} open={open} direction="top">
-            <div className="bg-gray-950 h-[340px]">
+            <div className="bg-gray-950 h-[340px] px-3 lg:px-0">
               <div className="flex items-center justify-between py-[13px] mb-8">
                 <Link href="/">
                   <img src="/images/logo.png" alt="" />
