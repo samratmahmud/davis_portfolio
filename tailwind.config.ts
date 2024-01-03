@@ -44,6 +44,7 @@ const config: Config = {
       "8xl": ["90px", {lineHeight: ""}],
       "9xl": ["14px", {lineHeight: "1.6em"}],
       "10xl": ["16px", {lineHeight: "1.6em"}],
+      "11xl": ["28px", {lineHeight: "1.2em"}],
     },
     fontFamily: {
       inter: ["Inter", ...fontFamily.sans],
@@ -56,7 +57,7 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "0.750rem",
+        DEFAULT: "0.625rem",
       },
     },
     screens: {

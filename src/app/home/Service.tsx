@@ -43,13 +43,15 @@ const serviceCards = [
 function Service() {
   return (
     <section>
-      <div className="container lg:my-[100px] my-20">
-        <Title title="SERVICE" section="SERVICE" />
+      <div className="container lg:my-[100px] my-20 overflow-hidden">
+        <div data-aos="fade-up">
+          <Title title="SERVICE" section="SERVICE" />
+        </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-[30px]">
           {serviceCards.map(({title, icon, describtion}, index) => (
             <div
               data-aos="zoom-out"
-              data-aos-duration={`${index * 300}`}
+              data-aos-delay={`${(index + 1) * 200}`}
               key={index}
               className="flex flex-col items-center border border-gray-400 rounded py-[50px] px-[30px] group bg-slate-500"
             >

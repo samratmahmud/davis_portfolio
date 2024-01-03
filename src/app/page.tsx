@@ -16,12 +16,12 @@ export default function Home() {
       <About />
       <Service />
       <Skills />
-      {/* <Resume /> */}
-      {/* <Portfolio /> */}
-      {/* <Review /> */}
-      {/* <Blogs /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Resume />
+      <Portfolio />
+      <Review />
+      <Blogs />
+      <Contact />
+      <Footer />
     </main>
   );
 }

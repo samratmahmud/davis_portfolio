@@ -60,7 +60,7 @@ function Navbar() {
         isVisible ? "bg-gray-900" : "bg-transparent"
       }`}
     >
-      <div className="lg:container px-3 lg:px-0">
+      <div className="lg:container px-3">
         <div className="flex gap-3 items-center justify-between">
           <Link href="/" className="py-[7px]">
             <img src="/images/logo.png" alt="" />

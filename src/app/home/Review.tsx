@@ -76,9 +76,11 @@ function Review() {
     ],
   };
   return (
-    <section className="bg-gray-950 py-[100px]">
+    <section className="bg-gray-950 lg:py-[100px] py-20">
       <div className="container">
-        <Title title="REVIEW" section="REVIEW" />
+        <div data-aos="fade-up">
+          <Title title="REVIEW" section="REVIEW" />
+        </div>
         <Slider {...settings}>
           {reviewCards.map(({contain, thumbnail, name, title}, index) => (
             <div key={index} className="group px-3">

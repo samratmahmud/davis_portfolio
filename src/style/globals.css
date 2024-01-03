@@ -6,7 +6,7 @@
 @import url("../fonts/Roboto/style.css");
 
 body {
-  @apply font-inter text-9xl lg:text-[16px] leading-[1.6em] font-normal text-gray-700;
+  @apply font-inter text-9xl lg:text-10xl leading-[1.6em] font-normal text-gray-700;
 }
 
 * {

@@ -32,10 +32,12 @@ function Skills() {
   return (
     <section className="bg-gray-950 lg:py-[100px] py-20">
       <div className="container mb-6">
-        <Title title="SKILLS" section="SKILLS" />
-        <div className="grid grid-cols-2">
-          <div className="mr-6">
-            <h2 className="text-5xl mb-6 text-gray-100">
+        <div data-aos="fade-up" data-aos-duration="500">
+          <Title title="SKILLS" section="SKILLS" />
+        </div>
+        <div className="grid lg:grid-cols-2 lg:gap-6 gap-[30px]">
+          <div data-aos="fade-right">
+            <h2 className="lg:text-5xl text-11xl mb-6 text-gray-100">
               All the skills that I have in that field of work are mentioned.
             </h2>
             <p>
@@ -47,13 +49,16 @@ function Skills() {
               sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
             </p>
           </div>
-          <div className="flex flex-col gap-[25px]">
+          <div className="flex flex-col lg:gap-[25px] gap-3">
             {skillsPersent.map(({title, result}, index) => (
-              <div key={index}>
+              <div
+                data-aos="fade-up"
+                data-aos-delay={`${(index + 1) * 200}`}
+                key={index}
+                className="font-roboto"
+              >
                 <div className="mb-0.5 flex justify-between gap-5">
-                  <h2 className="text-[16px] text-gray-100 leading-[1.2em] font-bold">
-                    {title}
-                  </h2>
+                  <h2 className="text-10xl text-gray-100 font-bold">{title}</h2>
                   <p className="text-primary">{result}</p>
                 </div>
                 <div className="border-[1.5px] border-primary" />

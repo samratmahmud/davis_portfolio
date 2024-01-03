@@ -52,6 +52,8 @@ function Blogs() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoPlaySpeed: 500,
     arrows: false,
     responsive: [
       {
@@ -73,8 +75,10 @@ function Blogs() {
 
   return (
     <section id="blog">
-      <div className="container my-100">
-        <Title title="BLOGS" section="BLOGS" />
+      <div className="container lg:my-[100px] my-20">
+        <div data-aos="fade-up">
+          <Title title="BLOGS" section="BLOGS" />
+        </div>
         <Slider {...settings}>
           {blogsCards.map(({thumbnail, title, admin, date}, index) => (
             <div key={index} className="px-3">

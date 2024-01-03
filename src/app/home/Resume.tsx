@@ -60,17 +60,19 @@ const resumeItems = [
 
 function Resume() {
   return (
-    <section id="resume" className="bg-gray-950 pb-[100px]">
+    <section id="resume" className="bg-gray-950 lg:pb-[100px] pb-20">
       <div className="container">
-        <Title title="RESUME" section="RESUME" />
-        <div className="grid grid-cols-2 gap-6">
+        <div data-aos="fade-up" className="mb-24">
+          <Title title="RESUME" section="RESUME" />
+        </div>
+        <div className="grid lg:grid-cols-2 lg:gap-6 gap-32">
           {resumeItems.map(({icon, details, headline}, index) => (
-            <div key={index} className="">
-              <div className="flex items-center gap-7 mb-12">
+            <div key={index} data-aos="fade-up" data-aos-delay="300">
+              <div className="flex items-center gap-7 lg:mb-12 mb-8">
                 <img src={icon} alt="" />
                 <h2 className="text-5xl text-gray-100">{headline}</h2>
               </div>
-              <div className="pl-14 flex flex-col gap-12 relative">
+              <div className="pl-14 flex flex-col lg:gap-12 gap-[30px] relative">
                 {details.map(({title, date, subTitle, describtion}, index) => (
                   <div key={index} className="group">
                     <div className="relative">

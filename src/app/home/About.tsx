@@ -38,7 +38,9 @@ function About() {
   return (
     <section id="about">
       <div className="container lg:my-[100px] my-20">
-        <Tittle title="ABOUT ME" section="ABOUT ME" />
+        <div data-aos="fade-up">
+          <Tittle title="ABOUT ME" section="ABOUT ME" />
+        </div>
         <div className="grid lg:grid-cols-2 lg:gap-10 gap-7">
           <img
             data-aos="fade-right"
@@ -48,7 +50,7 @@ function About() {
             alt=""
           />
           <div data-aos="zoom-in" data-aos-delay="300">
-            <h2 className="md:text-5xl text-4xl mb-5 text-gray-100">
+            <h2 className="text-5xl mb-5 text-gray-100">
               Hi There! I'm Edward Davis
             </h2>
             <h4 className="text-lg font-light text-primary mb-5">

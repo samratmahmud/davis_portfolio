@@ -55,13 +55,17 @@ function Portfolio() {
 
   return (
     <section id="portfolio">
-      <div className="container my-100">
-        <Title title="PORTFOLIO" section="PORTFOLIO" />
+      <div className="container lg:my-[100px] my-20">
+        <div data-aos="fade-up">
+          <Title title="PORTFOLIO" section="PORTFOLIO" />
+        </div>
         <div className="relative">
-          <div className="grid grid-cols-3 gap-6 mb-12">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mb-12">
             {portfolioCards.map(
               ({thumbnail, icon, title, describtion}, index) => (
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay={`${(index + 1) * 100}`}
                   key={index}
                   className="relative group overflow-hidden cursor-pointer"
                   onClick={() => setOpenedItem(portfolioCards[index])}
@@ -86,9 +90,9 @@ function Portfolio() {
           </div>
           <div>
             {openedItem !== null && (
-              <div className="fixed top-0 left-0 right-0 z-[1080] bg-gray-950/75 backdrop:blur h-screen overflow-y-scroll py-7">
+              <div className="fixed top-0 left-0 right-0 z-[1080] bg-gray-950/75 backdrop:blur h-screen overflow-y-scroll lg:py-7 py-3.5 px-2.5">
                 <div className="bg-white max-w-[800px] mx-auto rounded-lg">
-                  <div className="flex items-center justify-between gap-3 p-4">
+                  <div className="flex items-center justify-between gap-3 lg:p-4 p-3">
                     <h2 className="text-gray-400 text-base tracking-normal font-bold">
                       {openedItem.title}
                     </h2>
@@ -99,7 +103,7 @@ function Portfolio() {
                   <div className="border border-gray-300" />
                   <div className="p-4">
                     <img
-                      className="mb-5 w-full"
+                      className="mb-5 w-full aspect-square"
                       src={openedItem.thumbnail}
                       alt=""
                     />
