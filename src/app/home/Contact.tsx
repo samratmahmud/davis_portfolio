@@ -54,12 +54,18 @@ function Contact() {
   const [show, setShow] = useState(0);
 
   return (
-    <section id="contact" className="bg-gray-950 py-[100px]">
+    <section id="contact" className="bg-gray-950 lg:py-[100px] py-20">
       <div className="container">
-        <Title title="CONTACT" section="CONTACT" />
-        <div className="flex gap-6">
-          <div className="w-[50%]">
-            <h2 className="text-2xl mb-5 text-gray-100">Just say Hello</h2>
+        <div data-aos="fade-up">
+          <Title title="CONTACT" section="CONTACT" />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="flex lg:flex-row flex-col lg:gap-6 gap-16"
+        >
+          <div className="lg:w-[50%]">
+            <h2 className="text-2xl mb-6 text-gray-100">Just say Hello</h2>
             <div className="flex flex-col gap-[30px]">
               <TextField type="name" placeholder="Your Name" />
               <TextField type="email" placeholder="Your Email" />
@@ -75,9 +81,9 @@ function Contact() {
               </button>
             </div>
           </div>
-          <div className="w-[50%]">
+          <div className="lg:w-[50%]">
             <h2 className="text-2xl mb-5 text-gray-100">Contact Info</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-10xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               ligula nulla tincidunt id faucibus sed suscipit feugiat.
             </p>
@@ -92,8 +98,8 @@ function Contact() {
                       <h3 className="text-md text-gray-100 mb-1.5 -mt-1">
                         {title}
                       </h3>
-                      <p className={`${className}`}>{contain1}</p>
-                      <p className={`${className}`}>{contain2}</p>
+                      <p className={`text-10xl ${className}`}>{contain1}</p>
+                      <p className={`text-10xl ${className}`}>{contain2}</p>
                     </div>
                   </div>
                 )

@@ -21,7 +21,7 @@ function SocialPlatform(props: socialProps) {
         <img className="w-5 h-5 scale-150 opacity-70" src={icon} alt="" />
       </span>
       <span
-        className={`text-gray-100 font-semibold  duration-500 overflow-hidden ${
+        className={`text-gray-100 font-semibold  duration-500 overflow-hidden text-10xl ${
           isActive ? "max-w-[200px] mr-4" : "max-w-[0px] mr-0"
         }`}
       >

@@ -85,7 +85,7 @@ function Blogs() {
               <Link href="/" target="_blank">
                 <div className="overflow-hidden mb-6">
                   <img
-                    className="scale-100 hover:scale-105 duration-300"
+                    className="scale-100 hover:scale-105 duration-300 w-full"
                     src={thumbnail}
                     alt=""
                   />
