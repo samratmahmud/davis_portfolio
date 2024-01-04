@@ -81,7 +81,12 @@ function Blogs() {
         </div>
         <Slider {...settings}>
           {blogsCards.map(({thumbnail, title, admin, date}, index) => (
-            <div key={index} className="px-3">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              key={index}
+              className="px-3"
+            >
               <Link href="/" target="_blank">
                 <div className="overflow-hidden mb-6">
                   <img

@@ -14,6 +14,7 @@ function Layout(props: layoutProps) {
   useEffect(() => {
     AOS.init({
       duration: 700,
+      once: true,
     });
   });
   return (

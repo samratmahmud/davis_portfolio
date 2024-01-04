@@ -56,12 +56,12 @@ function Contact() {
   return (
     <section id="contact" className="bg-gray-950 lg:py-[100px] py-20">
       <div className="container">
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-delay="200">
           <Title title="CONTACT" section="CONTACT" />
         </div>
         <div
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-delay="400"
           className="flex lg:flex-row flex-col lg:gap-6 gap-16"
         >
           <div className="lg:w-[50%]">
@@ -83,7 +83,7 @@ function Contact() {
           </div>
           <div className="lg:w-[50%]">
             <h2 className="text-2xl mb-5 text-gray-100">Contact Info</h2>
-            <p className="mb-6 text-10xl">
+            <p className="mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               ligula nulla tincidunt id faucibus sed suscipit feugiat.
             </p>
@@ -98,8 +98,8 @@ function Contact() {
                       <h3 className="text-md text-gray-100 mb-1.5 -mt-1">
                         {title}
                       </h3>
-                      <p className={`text-10xl ${className}`}>{contain1}</p>
-                      <p className={`text-10xl ${className}`}>{contain2}</p>
+                      <p className={`${className}`}>{contain1}</p>
+                      <p className={`${className}`}>{contain2}</p>
                     </div>
                   </div>
                 )
